@@ -1,0 +1,424 @@
+* {
+	z-index: 0;
+	font-family: "微软雅黑";
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	position: relative;
+	min-height: 600px;
+}
+body{
+	behavior: url(../csshover.htc);
+}
+/*pc下*/
+	body {
+		min-width: 769px;
+	}
+	.ipad-menu{
+		display: none;
+	}
+	.pc-menu{display: block}
+/*end pc下*/
+/*ipad下*/
+
+/*end ipad下*/
+header {
+	display: block;
+	margin: 10px 0 0 0;
+	float: right;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	min-width: 600px;
+}
+
+header ul {
+	float: left;
+}
+
+header li {
+	width: 50px;
+	float: left;
+	list-style: none;
+	text-align: center;
+}
+
+header li a {
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.normalfont {
+	font-weight: normal;
+}
+
+nav li a:hover {
+	color: #38F;
+}
+
+nav {
+	float: right;
+}
+
+nav label a {
+	text-align: center;
+	width: 80px;
+	margin-left: 5px;
+	float: left;
+	display: inline-block;
+	/*padding: 5px;*/
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #3388FF;
+	cursor: pointer;
+}
+
+.setting ul {
+	display: none;
+}
+
+.setting span {
+	font-size: 12px;
+}
+
+.setting:hover ul {
+	height: 120px;
+	box-shadow: 1px 1px 5px #d1d1d1;
+	-webkit-box-shadow: 1px 1px 5px #d1d1d1;
+	-moz-box-shadow: 1px 1px 5px #d1d1d1;
+	margin-top: 5px;
+	margin-left: -20px;
+	behavior: url(../ie-css3.htc);
+	border: 1px solid #000000 \9;
+}
+
+.setting ul li {
+	cursor: pointer;
+	text-align: center;
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	line-height: 20px;
+}
+
+.setting:hover ul {
+	background: #FFFFFF;
+	display: block;
+}
+
+.setting ul span:hover {
+	background-color: #38F;
+	color: #FFF;
+	padding: 5px;
+	display: block;
+	text-align: center;
+}
+
+
+
+
+/*更多产品*/
+
+.moreproductcontainer {
+	/*border: 1px solid red;*/
+	margin-top: -40px;
+	display: none;
+	float: left;
+	opacity: 1;
+	background: #f9f9f9;
+	border-left: #f0f0f0 1px solid;
+}
+
+.moreproductcontainer a {
+	width: 65px;
+	height: 76px;
+	text-decoration: none;
+	margin: 10px auto 5px;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	border-bottom: #f0f0f0 1px solid;
+}
+
+.moreproductcontainer span {
+	margin: 0 auto;
+	width: 36px;
+	height: 45px;
+	display: block;
+}
+
+.moreproductcontainer li {
+	width: 90px;
+	background-color: #f9f9f9;
+	font-size: 12px;
+}
+
+.demo {
+	width: 91px;
+	float: left;
+}
+
+.demo:hover .moreproductcontainer {
+	display: block;
+	height: 100%;
+}
+
+.moreproductcontainer li {
+	float: left;
+	/*display: block;*/
+}
+
+
+/*End 更多产品*/
+
+
+/*正文*/
+
+#wrapper {
+	width: 642px;
+	/*height: 100px;*/
+	margin: 0 auto;
+	text-align: center;
+}
+#wrapper .logo{
+	width: 50%;
+	height: 50%;
+}
+form {
+	margin-top: 22px;
+	height: 39px;
+	border: 1px solid #CCCCCC;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 5px;
+}
+
+form:hover {
+	border: 1px solid #38F;
+}
+
+.content {
+	height: 39px;
+	float: left;
+	border: none;
+	background: none;
+	outline: none;
+	width: 522px;
+	width: 505px \9;
+	<!-- [ if IE 10]> width: 522 px;
+	< ! [ endif] -->
+}
+
+.content:focus {
+	/*border: none;*/
+}
+
+.btn_search {
+	font-size: 14px;
+	height: 41px;
+	background: #38f;
+	float: left;
+	color: #FFFFFF;
+	width: 100px;
+	border: none;
+	cursor: pointer;
+	height: 39px \9;
+}
+
+
+/*End 正文*/
+
+
+/*相机*/
+
+.camera {
+	background: url(../img/camera_new_679c15cc.png) 0 0 no-repeat;
+	width: 18px;
+	height: 19px;
+	float: left;
+	margin-left: 6px;
+	margin-right: 6px;
+	cursor: pointer;
+	margin-top: 0px;
+}
+
+.camera:hover {
+	background: url(../img/camera_new_679c15cc.png) 0 -20px no-repeat;
+}
+
+
+/*End 相机*/
+
+
+/*底部*/
+
+footer {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: 0px;
+}
+.nopc-container,.phone-container{
+    display: none;
+}
+.footerContainer {
+	width: 720px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.footerContainer span a,
+.footerContainer span,
+.footerContainer p {
+	font-size: 12px;
+}
+
+
+/*手机百度*/
+
+.bdphone {
+	display: inline-block;
+	width: 180px;
+	height: 100%;
+	float: left;
+	line-height: 100px;
+}
+
+.bdphoneqr {
+	width: 30%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	line-height: 60px;
+	position: relative;
+}
+
+.bdphoneqr img {
+	position: absolute;
+	top: 20px;
+	left: 10px;
+}
+
+.bdphonetext {
+	margin-left: 70px;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	line-height: 50px;
+}
+
+.bdphonefirsttext {
+	display: block;
+	height: 20px;
+	margin: 10px;
+}
+
+.bdphonesecondtext {
+	display: block;
+	height: 20px;
+	margin: 10px;
+}
+
+
+/*End 手机百度*/
+
+
+/*糯米*/
+
+.nuomi {
+	display: inline-block;
+	width: 180px;
+	height: 100%;
+	float: left;
+}
+
+.nuomiqr {
+	width: 30%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	line-height: 60px;
+	position: relative;
+}
+
+.nuomiqr img {
+	position: absolute;
+	top: 20px;
+	left: 10px;
+}
+
+.nuomitext {
+	margin-left: 70px;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	line-height: 50px;
+}
+
+.nuomifirsttext {
+	display: block;
+	height: 20px;
+	margin: 10px;
+}
+
+.nuomisecondtext {
+	display: block;
+	height: 20px;
+	margin: 10px;
+}
+
+
+/*End 糯米*/
+
+
+/*百度信息*/
+
+.bdmessage {
+	display: inline-block;
+	width: 350px;
+	height: 100%;
+	float: left;
+	padding-top: 20px;
+}
+
+.introduce,
+.introduce a {
+	color: #999;
+}
+
+.introduce .firstline {
+	margin-right: 20px;
+}
+
+.introduce {
+	line-height: 22px;
+}
+
+.icp {
+	display: inline-block;
+	width: 14px;
+	height: 17px;
+	background: url(../img/icons_0e814c16.png) -600px -96px no-repeat;
+}
+
+.pollice {
+	display: inline-block;
+	width: 14px;
+	height: 17px;
+	background: url(../img/icons_0e814c16.png) -623px -96px no-repeat;
+}
+
+
+/*End 百度信息*/
+
+.greyfont {
+	color: #999;
+}
+
+
+/*End 底部*/
